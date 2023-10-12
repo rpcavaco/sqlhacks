@@ -6,10 +6,10 @@
 
 -- 1. 
 -- Stop repeating schema names before every database object name.
--- Change search_path to include handy scehma names.
+-- Change search_path to include handy schema names.
 -- Don't forget:
 
---   - search order: if exist similar names exist in different schemata search order runs form left to right after 'to' word
+--   - search order: if similar names exist in different schemata, search order runs form left to right after 'to' word ('public' schema is search last in example);
 --   - never forget to include 'public' schema, otherwise you might hamper extensions and some basic functionality.
 
 set search_path to <your schema>, public;
